@@ -1,6 +1,7 @@
 from . import models
 from . import wizard
 
+from odoo import api
 from openupgradelib import openupgrade
 from psycopg2 import sql
 
@@ -17,11 +18,12 @@ def rename_old_italian_module(cr):
         return
 
     new_module_name = "l10n_it_declaration_of_intent"
-    env = api.Environment(cr, SUPERUSER_ID, {})
+    env = api.Environment(cr, 1, {})
 
-    old_sequence = env["ir.model.data"].get_object(
-        old_module_name, "dichiarazione_intento_seq"
+    id_old_sequence = env["ir.model.data"]._xmlid_lookup(
+        '{}.dichiarazione_intento_seq'.format(old_module_name)
     )
+    old_sequence = env["ir.sequence"].browse(id_old_sequence[2])
     old_sequence.code = "declaration_of_intent"
 
     renamed_fields = [
