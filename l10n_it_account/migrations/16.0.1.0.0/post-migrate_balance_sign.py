@@ -4,7 +4,8 @@
 from openupgradelib import openupgrade
 
 
-# def migrate(cr, installed_version):
+def migrate(cr, installed_version):
+    return
 #     # Assign the sign of the account type to the account
 #     openupgrade.logged_query(
 #         cr,
