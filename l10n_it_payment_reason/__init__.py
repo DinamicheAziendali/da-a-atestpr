@@ -5,7 +5,7 @@ from openupgradelib import openupgrade
 
 def rename_old_italian_module(cr):
 
-    if not openupgrade.is_module_installed(cr, "l10n_it_causali_pagamento"):
+    if not openupgrade.is_module_installed(cr, "l10n_it_causali_pagamento") and not openupgrade.is_module_installed(cr, "l10n_it_payment_reason"):
         return
 
     openupgrade.rename_xmlids(
