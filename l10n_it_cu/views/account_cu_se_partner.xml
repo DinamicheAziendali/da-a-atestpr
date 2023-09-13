@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_cu_se_partner_tree" model="ir.ui.view">
+        <field name="name">account.cu.se.partner.tree</field>
+        <field name="model">account.cu.se.partner</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="statement_type_id"/>
+                <field name="fiscalcode"/>
+                <field name="lastname"/>
+                <field name="firstname"/>
+                <field name="gender"/>
+                <field name="birth_date"/>
+                <field name="amount_total" sum="Tot"/>
+                <field name="amount_ns_withholding_tax_other" sum="Tot"/>
+                <field name="amount_untaxed" sum="Tot"/>
+                <field name="amount_withholding_tax_deposit" sum="Tot"/>
+                <field name="error"/>
+                <field name="error_msg"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_account_cu_se_partner_search" model="ir.ui.view">
+        <field name="name">account.cu.se.partner.search</field>
+        <field name="model">account.cu.se.partner</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="lastname"/>
+                <field name="fiscalcode"/>
+                <field name="firstname"/>
+                <filter
+                    name="with_error"
+                    string="With Errors"
+                    domain="[('error', '=', True)]"
+                />
+                <group expand="0" string="Group By">
+                    <filter string="Statement" name="statement_id" context="{'group_by':'statement_id'}"/>
+                    <filter string="Statement Type" name="statement_type_id" context="{'group_by':'statement_type_id'}"/>
+                    <filter string="State" name="state" context="{'group_by':'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_account_cu_se_partner_form" model="ir.ui.view">
+        <field name="name">account.cu.se.partner.form</field>
+        <field name="model">account.cu.se.partner</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="reset_to_draft" type='object' attrs="{'invisible':[('state','=','draft')]}" string="Reset to Draft" />
+                    <button name="set_substitution" type='object' attrs="{'invisible':[('state','=','substitution')]}" string="Set Substitution" />
+                    <button name="set_cancelled" type='object' attrs="{'invisible':[('state','=','cancelled')]}" string="Set Cancelled" />
+                    <button name="set_done" type='object' attrs="{'invisible':[('state','=','done')]}" string="Set Done" />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="partner_id"/>
+                            <field name="record_dh_txt"/>
+                        </group>
+                        <group>
+                            <field name="ade_protocol"/>
+                            <field name="ade_sequence"/>
+                            <field name="ade_operation"/>
+                        </group>
+                    </group>
+                    <div class="row mt16 o_settings_container" id="partner_data_1" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-4">
+                            <label for="fiscalcode"/>
+                            <field name="fiscalcode"/>
+                        </div>
+                        <div class="col-xs-2 col-md-4">
+                            <label for="lastname"/>
+                            <field name="lastname"/>
+                        </div>
+                        <div class="col-xs-2 col-md-4">
+                            <label for="firstname"/>
+                            <field name="firstname"/>
+                        </div>
+                    </div>
+                    <div class="row mt16 o_settings_container" id="partner_data_2" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-1">
+                            <label for="gender"/>
+                            <field name="gender"/>
+                        </div>
+                        <div class="col-xs-2 col-md-2">
+                            <label for="birth_date"/>
+                            <field name="birth_date"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="birth_city"/>
+                            <field name="birth_city"/>
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                            <label for="birth_province"/>
+                            <field name="birth_province"/>
+                        </div>
+                        <!-- empty-->
+                        <div class="col-xs-2 col-md-1">
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                            <label for="special_categories"/>
+                            <field name="special_categories"/>
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                            <label for="exceptional_events"/>
+                            <field name="exceptional_events"/>
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                            <label for="exclusion_cases"/>
+                            <field name="exclusion_cases"/>
+                        </div>
+                    </div>
+                    <!-- Domicile 1-->
+                    <div class="row mt16 o_settings_container" id="partner_domicile_1" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-6">
+                            <label for="domicile_1_city"/>
+                            <field name="domicile_1_city"/>
+                        </div>
+                        <div class="col-xs-2 col-md-2">
+                            <label for="domicile_1_province"/>
+                            <field name="domicile_1_province"/>
+                        </div>
+                        <div class="col-xs-2 col-md-2">
+                            <label for="domicile_1_city_code"/>
+                            <field name="domicile_1_city_code"/>
+                        </div>
+                        <div class="col-xs-2 col-md-2">
+                            <label for="domicile_1_city_merge_code"/>
+                            <field name="domicile_1_city_merge_code"/>
+                        </div>
+                    </div>
+                    <!-- Domicile 2-->
+                    <div class="row mt16 o_settings_container" id="partner_domicile_2" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-6">
+                            <label for="domicile_2_city"/>
+                            <field name="domicile_2_city"/>
+                        </div>
+                        <div class="col-xs-2 col-md-2">
+                            <label for="domicile_2_province"/>
+                            <field name="domicile_2_province"/>
+                        </div>
+                        <div class="col-xs-2 col-md-2">
+                            <label for="domicile_2_city_code"/>
+                            <field name="domicile_2_city_code"/>
+                        </div>
+                        <div class="col-xs-2 col-md-2">
+                            <label for="domicile_2_city_merge_code"/>
+                            <field name="domicile_2_city_merge_code"/>
+                        </div>
+                    </div>
+                    <group string="Sections" name="sections">
+                        <field name="line_ids" nolabel="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_account_cu_se_partner" model="ir.actions.act_window">
+        <field name="name">Se Partner</field>
+        <field name="res_model">account.cu.se.partner</field>
+        <field name="view_id" ref="view_account_cu_se_partner_tree"/>
+    </record>
+
+    <menuitem id="menu_cu_se_partner" name="CU SE Partner"
+        action="action_account_cu_se_partner"
+        parent="menu_account_cu_main" sequence="10"/>
+
+</odoo>

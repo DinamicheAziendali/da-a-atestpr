@@ -1,0 +1,244 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="view_account_cu_se_partner_line_tree" model="ir.ui.view">
+        <field name="name">account.cu.se.partner.line.tree</field>
+        <field name="model">account.cu.se.partner.line</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="income_type_code"/>
+                <field name="amount_total" sum="Total"/>
+                <field name="code"/>
+                <field name="amount_ns_withholding_tax_other" sum="Total"/>
+                <field name="amount_untaxed" sum="Total"/>
+                <field name="error"/>
+                <field name="error_msg"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_account_cu_se_partner_line_form" model="ir.ui.view">
+        <field name="name">account.cu.se.partner.line.form</field>
+        <field name="model">account.cu.se.partner.line</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <!--
+                    INCOME TYPE
+                    -->
+                    <div class="row mt16 o_settings_container" id="line_data_1" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-2" style="background-color: white;">
+                            <h3>Income Type</h3>
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                            <label for="income_type_code"/>
+                            <field name="income_type_code"/>
+                        </div>
+                        <!-- empty -->
+                        <div class="col-xs-2 col-md-9">
+                        </div>
+                    </div>
+                    <!--
+                    INCOME TYPE
+                    -->
+                    <div class="row mt16 o_settings_container" id="line_data_2" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-2" style="background-color: white;">
+                            <h3>Fiscal Datas</h3>
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                        </div>
+                        <div class="col-xs-2 col-md-2">
+                            <label for="year"/>
+                            <field name="year"/>
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                            <label for="anticipation"/>
+                            <field name="anticipation"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_total"/>
+                            <field name="amount_total"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_ns_withholding_tax_agreement"/>
+                            <field name="amount_ns_withholding_tax_agreement"/>
+                        </div>
+                    </div>
+
+                    <div class="row mt16 o_settings_container" id="line_data_3" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-2" style="background-color: white;">
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                            <label for="code"/>
+                            <field name="code"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_ns_withholding_tax_other"/>
+                            <field name="amount_ns_withholding_tax_other"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_untaxed"/>
+                            <field name="amount_untaxed"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_withholding_tax_deposit"/>
+                            <field name="amount_withholding_tax_deposit"/>
+                        </div>
+                    </div>
+
+                    <div class="row mt16 o_settings_container" id="line_data_3" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-2" style="background-color: white;">
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_withholding_tax"/>
+                            <field name="amount_withholding_tax"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_withholding_tax_suspended"/>
+                            <field name="amount_withholding_tax_suspended"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_withholding_regional_deposit"/>
+                            <field name="amount_withholding_regional_deposit"/>
+                        </div>
+                    </div>
+
+                    <div class="row mt16 o_settings_container" id="line_data_3" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-2" style="background-color: white;">
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_withholding_regional"/>
+                            <field name="amount_withholding_regional"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_withholding_regional_suspended"/>
+                            <field name="amount_withholding_regional_suspended"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_withholding_municipal_deposit"/>
+                            <field name="amount_withholding_municipal_deposit"/>
+                        </div>
+                    </div>
+
+                    <div class="row mt16 o_settings_container" id="line_data_3" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-2" style="background-color: white;">
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_withholding_municipal"/>
+                            <field name="amount_withholding_municipal"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_withholding_municipal_suspended"/>
+                            <field name="amount_withholding_municipal_suspended"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_untaxed_previous_years"/>
+                            <field name="amount_untaxed_previous_years"/>
+                        </div>
+                    </div>
+
+                    <div class="row mt16 o_settings_container" id="line_data_3" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-2" style="background-color: white;">
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_withholding_previous_years"/>
+                            <field name="amount_withholding_previous_years"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_expenses_refunded"/>
+                            <field name="amount_expenses_refunded"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="amount_withholding_refunded"/>
+                            <field name="amount_withholding_refunded"/>
+                        </div>
+                    </div>
+
+                    <div class="row mt16 o_settings_container" id="line_data_4" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-2" style="background-color: white;">
+                            <h3>Social Security Datas</h3>
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="social_security_office_fiscalcode"/>
+                            <field name="is_social_security_required" invisible="1"/>
+                            <field name="social_security_office_fiscalcode"
+                                   attrs="{'required': [('is_social_security_required', '=', True)]}"/>
+                        </div>
+                        <div class="col-xs-2 col-md-6">
+                            <label for="social_security_office_name"/>
+                            <field name="social_security_office_name"/>
+                        </div>
+                    </div>
+
+                    <div class="row mt16 o_settings_container" id="line_data_5" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-2" style="background-color: white;">
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="company_code"/>
+                            <field name="company_code"/>
+                        </div>
+                        <div class="col-xs-2 col-md-2">
+                            <label for="category_id"/>
+                            <field name="category_id"/>
+                        </div>
+                    </div>
+
+                    <div class="row mt16 o_settings_container" id="line_data_6" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-2" style="background-color: white;">
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="employer_contributions_social_security_payments"/>
+                            <field name="employer_contributions_social_security_payments"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="partner_contributions_social_security_payments"/>
+                            <field name="partner_contributions_social_security_payments"/>
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                            <label for="other_contributions"/>
+                            <field name="other_contributions"/>
+                        </div>
+                    </div>
+
+                    <div class="row mt16 o_settings_container" id="line_data_7" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-2" style="background-color: white;">
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="other_contributions_amount"/>
+                            <field name="other_contributions_amount"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="contributions_due"/>
+                            <field name="contributions_due"/>
+                        </div>
+                        <div class="col-xs-2 col-md-3">
+                            <label for="contributions_paid"/>
+                            <field name="contributions_paid"/>
+                        </div>
+                    </div>
+
+                    <group string="Invoices" name="invoices">
+                        <field name="invoice_ids" nolabel="1"/>
+                    </group>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

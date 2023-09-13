@@ -1,0 +1,224 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="view_account_cu_statement_tree" model="ir.ui.view">
+        <field name="name">account.cu.statement.tree</field>
+        <field name="model">account.cu.statement</field>
+        <field name="arch" type="xml">
+            <tree string="CU Statements">
+                <field name="name"/>
+                <field name="date_start"/>
+                <field name="date_stop"/>
+                <field name="employer_id"/>
+                <field name="company_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_account_cu_statement_search" model="ir.ui.view">
+        <field name="name">account.cu.statement.search</field>
+        <field name="model">account.cu.statement</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="employer_id"/>
+                <field name="date_start"/>
+                <field name="date_stop"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_account_cu_statement_form" model="ir.ui.view">
+        <field name="name">account.cu.statement.form</field>
+        <field name="model">account.cu.statement</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="button_statement_compute" string="Compute" type="object"
+                        confirm="Are you shure? The existing lines will be deleted and recomputed!"/>
+                    <button name="button_statement_print" string="Print" type="object"/>
+                    <button name="button_statement_export" string="Export" type="object"/>
+                    <button name="button_statement_copy" string="Copy Statement" type="object"/>
+                </header>
+                <sheet>
+                    <group name="params">
+                        <group>
+                            <field name="statement_type_id"/>
+                            <field name="date_start"/>
+                            <field name="date_stop"/>
+                        </group>
+                        <group>
+                            <field name="company_id"/>
+                            <field name="record_ab_txt"/>
+                        </group>
+                    </group>
+                    <newline/>
+                    <group name="employer" string="Employer">
+                        <field name="employer_id"/>
+                    </group>
+                    <!-- Employer: Line 1 -->
+                    <div class="row mt16 o_settings_container" id="employer_data_1" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-4">
+                            <label for="employer_fiscalcode"/>
+                            <field name="employer_fiscalcode"/>
+                        </div>
+                        <div class="col-xs-2 col-md-4">
+                            <label for="employer_lastname"/>
+                            <field name="employer_lastname"/>
+                        </div>
+                        <div class="col-xs-2 col-md-4">
+                            <label for="employer_firstname"/>
+                            <field name="employer_firstname"/>
+                        </div>
+                    </div>
+                    <!-- Employer: Line 2 -->
+                    <div class="row mt16 o_settings_container" id="employer_data_2" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-4">
+                            <label for="employer_city"/>
+                            <field name="employer_city"/>
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                            <label for="employer_province"/>
+                            <field name="employer_province"/>
+                        </div>
+                        <div class="col-xs-2 col-md-1">
+                            <label for="employer_zip"/>
+                            <field name="employer_zip"/>
+                        </div>
+                        <div class="col-xs-2 col-md-6">
+                            <label for="employer_address"/>
+                            <field name="employer_address"/>
+                        </div>
+                    </div>
+                    <!-- Employer: Line 3 -->
+                    <div class="row mt16 o_settings_container" id="employer_data_3" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-4 col-md-4">
+                            <label for="employer_phone"/>
+                            <field name="employer_phone"/>
+                        </div>
+                        <div class="col-xs-4 col-md-6">
+                            <label for="employer_email"/>
+                            <field name="employer_email"/>
+                        </div>
+                        <div class="col-xs-4 col-md-1">
+                            <label for="employer_ateco_id"/>
+                            <field name="employer_ateco_id"/>
+                        </div>
+                        <div class="col-xs-4 col-md-1">
+                            <label for="employer_headquarters"/>
+                            <field name="employer_headquarters"/>
+                        </div>
+                    </div>
+
+                    <group name="taxpayer" string="Taxpayer">
+                    </group>
+                    <div class="row mt16 o_settings_container" id="taxpayer_data_1" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-6 col-md-6">
+                            <label for="taxpayer_fiscalcode"/>
+                            <field name="taxpayer_fiscalcode"/>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <label for="taxpayer_appointment_code_id"/>
+                            <field name="taxpayer_appointment_code_id" class="row col-12"/>
+                        </div>
+                    </div>
+                    <div class="row mt16 o_settings_container" id="taxpayer_data_2" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-6 col-md-6">
+                            <label for="taxpayer_lastname"/>
+                            <field name="taxpayer_lastname"/>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <label for="taxpayer_firstname"/>
+                            <field name="taxpayer_firstname"/>
+                        </div>
+                        </div>
+                    <div class="row mt16 o_settings_container" id="taxpayer_data_3" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-2 col-md-3">
+                            <label for="statement_date"/><br/>
+                            <field name="statement_date"/>
+                        </div>
+                        <div class="col-xs-2 col-md-9">
+                            <label for="taxpayer_sign"/>
+                            <field name="taxpayer_sign"/>
+                        </div>
+                    </div>
+
+                    <group name="delegate" string="Delegate">
+                    </group>
+                    <div class="row mt16 o_settings_container" id="delegate_data_1" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-6 col-md-6">
+                            <label for="delegate_fiscalcode"/>
+                            <field name="delegate_fiscalcode"/>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <label for="delegate_commitment"/>
+                            <field name="delegate_commitment"/>
+                        </div>
+                    </div>
+                    <div class="row mt16 o_settings_container" id="delegate_data_2" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-4 col-md-4">
+                            <label for="delegate_date"/>
+                            <field name="delegate_date"/>
+                        </div>
+                        <div class="col-xs-8 col-md-8">
+                            <label for="delegate_sign"/>
+                            <field name="delegate_sign"/>
+                        </div>
+                    </div>
+
+                    <group name="statement_sign" string="Statement Sign">
+                    </group>
+                    <div class="row mt16 o_settings_container" id="statement_sign" style="background-color: #e6e6e6;margin-top:0px!important;">
+                        <div class="col-xs-6 col-md-6">
+                            <label for="certification_count"/>
+                            <field name="certification_count"/>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <label for="statement_sign"/>
+                            <field name="statement_sign"/>
+                        </div>
+                    </div>
+
+                    <notebook>
+                    <!--
+                        Partner
+                    -->
+                        <page name="se_partner" string="Self-Employment certification, commissions and different incomes">
+                            <field name="certification_se_lines_ids">
+                                <tree name="se_partner">
+                                    <field name="confirmed" widget="boolean_toggle"/>
+                                    <field name="fiscalcode"/>
+                                    <field name="lastname"/>
+                                    <field name="firstname"/>
+                                    <field name="gender"/>
+                                    <field name="birth_date"/>
+                                    <field name="error"/>
+                                    <field name="error_msg"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_account_cu_statement" model="ir.actions.act_window">
+        <field name="name">CU Statements</field>
+        <field name="res_model">account.cu.statement</field>
+        <field name="view_id" ref="view_account_cu_statement_tree"/>
+    </record>
+
+    <menuitem id="menu_account_cu_main" name="CU Statements"
+        parent="l10n_it_withholding_tax.wt_main" sequence="50"/>
+
+    <menuitem id="menu_cu_statements" name="CU Statements"
+        action="action_account_cu_statement"
+        parent="menu_account_cu_main" sequence="1"/>
+
+</odoo>

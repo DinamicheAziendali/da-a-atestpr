@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="view_account_cu_statement_type_form" model="ir.ui.view">
+        <field name="name">account.cu.statement.form</field>
+        <field name="model">account.cu.statement</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="name"/>
+                    <field name="date_start"/>
+                    <field name="date_stop"/>
+                </group>
+                <group name="certification_se" sting="Certification SE">
+                    <field name="certification_se_method_compute"/>
+                    <field name="certification_se_method_print"/>
+                    <field name="certification_se_method_export"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+</odoo>

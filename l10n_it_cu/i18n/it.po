@@ -1,0 +1,831 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_it_cu
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e-20211001\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-30 07:50+0000\n"
+"PO-Revision-Date: 2022-06-15 07:35+0000\n"
+"Last-Translator: Weblate Admin <weblate@example.com>\n"
+"Language-Team: Italian <https://ngu.openforce.it/projects/"
+"openforce-dinamiche-aziendali/l10n_it_cu/it/>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2.2\n"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__income_type_code
+msgid "1. Income Type Reason"
+msgstr "1. Motivo del tipo di reddito"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_withholding_tax
+msgid "10. Amount Withholding Tax"
+msgstr "10. Importo Ritenuta d'acconto"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_withholding_tax_suspended
+msgid "11. Amount Withholding Tax - Suspended"
+msgstr "11. Importo Ritenuta d'acconto - Sospesa"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_withholding_regional_deposit
+msgid "12. Amount Withholding Regional - Deposit"
+msgstr "12. Importo Ritenuta Regionale - Deposito"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_withholding_regional
+msgid "13. Amount Withholding Regional"
+msgstr "13. Importo Ritenuta Regionale"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_withholding_regional_suspended
+msgid "14. Amount Withholding Regional - Suspended"
+msgstr "14. Importo Ritenuta Regionale - Sospesa"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_withholding_municipal_deposit
+msgid "15. Amount Withholding Municipal - Deposit"
+msgstr "15. Importo Ritenuta Comunale - Deposito"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_withholding_municipal
+msgid "16. Amount Withholding Municipal"
+msgstr "16. Importo Ritenuta Comunale"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_withholding_municipal_suspended
+msgid "17. Amount Withholding Regional - Municipal"
+msgstr "17. Importo Ritenuta Regionale - Comunale"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_untaxed_previous_years
+msgid "18. Amount Untaxed Previous Years"
+msgstr "18. Importo non tassato anni precedenti"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_withholding_previous_years
+msgid "19. Amount Withholding Previous Years"
+msgstr "19. Importo trattenuto anni precedenti"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__year
+msgid "2. Year"
+msgstr "2. Anno"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_expenses_refunded
+msgid "20. Amount Expenses Refunded"
+msgstr "20. Importo Spese Rimborsate"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_withholding_refunded
+msgid "21. Amount Withholding Refunded"
+msgstr "21. Importo Ritenuta Rimborsata"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__social_security_office_fiscalcode
+msgid "29. Social Security Office Fiscal Code"
+msgstr "29. Codice Fiscale dell'Ufficio di Previdenza Sociale"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__anticipation
+msgid "3. Anticipation"
+msgstr "3. Anticipazione"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__social_security_office_name
+msgid "30. Social Security Office Name"
+msgstr "30. Nome dell'Ufficio di Previdenza Sociale"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__company_code
+msgid "32. Company Code"
+msgstr "32. Codice dell'azienda"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__category
+msgid "33. Category"
+msgstr "33. Categoria"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__employer_contributions_social_security_payments
+msgid "34. Employer Contributions Social Security Payments"
+msgstr "34. Contributi del datore di lavoro pagamenti della previdenza sociale"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__partner_contributions_social_security_payments
+msgid "35. Partner Contributions Social Security Payments"
+msgstr "35. Contributi dei partner pagamenti della previdenza sociale"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__other_contributions
+msgid "36. Other Contributions"
+msgstr "36. Altri contributi"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__other_contributions_amount
+msgid "37. Other Contributions Amount"
+msgstr "37. Importo altri contributi"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__contributions_due
+msgid "38. Contributions Due"
+msgstr "38. Contributi dovuti"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__contributions_paid
+msgid "39. Contributions Paid"
+msgstr "39. Contributi pagati"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__amount_total
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_total
+msgid "4. Amount Total"
+msgstr "4. Importo Totale"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_ns_withholding_tax_agreement
+msgid "5. Amount NS Withholding tax - Agreement"
+msgstr "5. Importo NS Ritenuta d'acconto - Accordo"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__code
+msgid "6. Code"
+msgstr "6. Codice"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__amount_ns_withholding_tax_other
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_ns_withholding_tax_other
+msgid "7. Amount NS Withholding tax - Other"
+msgstr "7. Importo NS Ritenuta d'acconto - Altro"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__amount_untaxed
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_untaxed
+msgid "8. Amount Untaxed"
+msgstr "8. Importo non tassato"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__amount_withholding_tax_deposit
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__amount_withholding_tax_deposit
+msgid "9. Amount Withholding Tax - Deposit"
+msgstr "9. Importo Ritenuta d'acconto - Deposito"
+
+#. module: l10n_it_cu
+#: model:ir.model,name:l10n_it_cu.model_account_cu_se_partner
+msgid "Account CU - Self-Employment certification - Partner"
+msgstr "Conto CU - Certificazione di lavoro autonomo - Partner"
+
+#. module: l10n_it_cu
+#: model:ir.model,name:l10n_it_cu.model_account_cu_se_partner_line
+msgid "Account CU - Self-Employment certification - Partner Line"
+msgstr "Conto CU - Certificazione di lavoro autonomo - Linea Partner"
+
+#. module: l10n_it_cu
+#: model:ir.model,name:l10n_it_cu.model_account_cu_se_partner_line_category
+msgid "Account CU - Self-Employment certification - Partner Line - Category"
+msgstr ""
+"Conto CU - Certificazione di lavoro autonomo - Linea Partner - Categoria"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__account_move_ids
+msgid "Account Moves"
+msgstr "Movimenti di conto"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__message_needaction
+msgid "Action Needed"
+msgstr "Azione necessaria"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__employer_address
+msgid "Address"
+msgstr "Indirizzo"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_statement_form
+msgid "Are you shure? The existing lines will be deleted and recomputed!"
+msgstr "Sei sicuro? Le linee esistenti verranno cancellate e ricalcolate!"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__employer_ateco_id
+msgid "Ateco Code"
+msgstr "Codice Ateco"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conteggio Allegati"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__birth_city
+msgid "Birth City/Strange Country"
+msgstr "Città natale/Paese straniero"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__birth_date
+msgid "Birth Date"
+msgstr "Data di nascita"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__birth_province
+msgid "Birth Province"
+msgstr "Provincia di nascita"
+
+#. module: l10n_it_cu
+#: model:ir.ui.menu,name:l10n_it_cu.menu_cu_se_partner
+msgid "CU SE Partner"
+msgstr "Partner CU SE"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__statement_id
+msgid "CU Statement"
+msgstr "Dichiarazione CU"
+
+#. module: l10n_it_cu
+#: model:ir.actions.act_window,name:l10n_it_cu.action_account_cu_statement
+#: model:ir.model,name:l10n_it_cu.model_account_cu_statement
+#: model:ir.ui.menu,name:l10n_it_cu.menu_account_cu_main
+#: model:ir.ui.menu,name:l10n_it_cu.menu_cu_statements
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_statement_tree
+msgid "CU Statements"
+msgstr "Dichiarazione CU"
+
+#. module: l10n_it_cu
+#: model:ir.model,name:l10n_it_cu.model_account_cu_statement_type
+msgid "CU Statements Type"
+msgstr "Tipo di Dichiarazione CU"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__certification_count
+msgid "Certification Count"
+msgstr "Conteggio Certificazioni"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__domicile_1_city
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__domicile_2_city
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__employer_city
+msgid "City"
+msgstr "Città"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__domicile_1_city_code
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__domicile_2_city_code
+msgid "City Code"
+msgstr "Codice Città"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__domicile_1_city_merge_code
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__domicile_2_city_merge_code
+msgid "City Merge Code"
+msgstr "Codice di unione Città"
+
+#. module: l10n_it_cu
+#: code:addons/l10n_it_cu/models/account_cu_se_partner_line.py:213
+#, python-format
+msgid "Code required for amount ns withholding tax other"
+msgstr "Codice richiesto per importo ns ritenuta d'acconto altro"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__delegate_commitment
+msgid "Commitment to submit statement electronically"
+msgstr "Impegno a presentare la dichiarazione in formato elettronico"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__company_id
+msgid "Company"
+msgstr "Azienda"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_statement_form
+msgid "Compute"
+msgstr "Calcolare"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__confirmed
+msgid "Confirmed"
+msgstr "Confermato"
+
+#. module: l10n_it_cu
+#: model:ir.model,name:l10n_it_cu.model_res_partner
+msgid "Contact"
+msgstr "Contatto"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__create_uid
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__create_uid
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line_category__create_uid
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__create_uid
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement_type__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__create_date
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__create_date
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line_category__create_date
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__create_date
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement_type__create_date
+msgid "Created on"
+msgstr "Creato"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__statement_date
+msgid "Date"
+msgstr "Data"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_statement_form
+msgid "Delegate"
+msgstr "Delegato"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__delegate_date
+msgid "Delegate Date"
+msgstr "Data del delegato"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__delegate_fiscalcode
+msgid "Delegate Fiscalcode"
+msgstr "Codice fiscale del delegato"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__delegate_sign
+msgid "Delegate Sign"
+msgstr "Firma del delegato"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__display_name
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__display_name
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line_category__display_name
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__display_name
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement_type__display_name
+msgid "Display Name"
+msgstr "Nome da visualizzare"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__employer_email
+msgid "Email"
+msgstr "Email"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_statement_form
+msgid "Employer"
+msgstr "Datore di lavoro"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__employer_id
+msgid "Employer / Withholding Agent"
+msgstr "Datore di lavoro / Agente d'imposta"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__error
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__error
+msgid "Error"
+msgstr "Errore"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__error_msg
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__error_msg
+msgid "Error Description"
+msgstr "Errore Descrizione"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__exceptional_events
+msgid "Exceptional events"
+msgstr "Eventi eccezionali"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__exclusion_cases
+msgid "Exclusion Cases"
+msgstr "Casi di esclusione"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_statement_form
+msgid "Export"
+msgstr "Esportazione"
+
+#. module: l10n_it_cu
+#: selection:account.cu.se.partner,gender:0
+msgid "Female"
+msgstr "Femmina"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__firstname
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__employer_firstname
+msgid "First name"
+msgstr "Nome"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_se_partner_line_form
+msgid "Fiscal Datas"
+msgstr "Dati Fiscali"
+
+#. module: l10n_it_cu
+#: model:ir.model,name:l10n_it_cu.model_account_fiscal_position
+msgid "Fiscal Position"
+msgstr "Posizione Fiscale"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__fiscalcode
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__employer_fiscalcode
+msgid "Fiscalcode"
+msgstr "Codice Fiscale"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__message_follower_ids
+msgid "Followers"
+msgstr "Followers"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Followers (Canali)"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Followers (Partners)"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__gender
+msgid "Gender"
+msgstr "Genere"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_se_partner_search
+msgid "Group By"
+msgstr "Raggruppa per"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__employer_headquarters
+msgid "Headquarters Code"
+msgstr "Codice Sede"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__id
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__id
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line_category__id
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__id
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement_type__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,help:l10n_it_cu.field_account_cu_statement__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Se spuntano, i nuovi messaggi richiedono la tua attenzione."
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,help:l10n_it_cu.field_account_cu_statement__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Se spuntano, i nuovi messaggi richiedono la tua attenzione."
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,help:l10n_it_cu.field_account_cu_statement__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se controllati, alcuni messaggi hanno un errore di consegna."
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,help:l10n_it_cu.field_account_cu_se_partner__confirmed
+msgid "If confirmed, this partner won't be recomputed"
+msgstr "Se confermato, questo partner non verrà ricalcolato."
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_fiscal_position__income_type_id
+#: model:ir.model.fields,field_description:l10n_it_cu.field_res_partner__income_type_id
+#: model:ir.model.fields,field_description:l10n_it_cu.field_res_users__income_type_id
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_se_partner_line_form
+msgid "Income Type"
+msgstr "Tipo di reddito"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__invoice_ids
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_se_partner_line_form
+msgid "Invoices"
+msgstr "Fatture"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__message_is_follower
+msgid "Is Follower"
+msgstr "E' un follower"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__is_social_security_required
+msgid "Is Social Security Required"
+msgstr "E' richiesta la sicurezza sociale"
+
+#. module: l10n_it_cu
+#: model:ir.model,name:l10n_it_cu.model_account_move_line
+msgid "Journal Item"
+msgstr "Articolo del registro"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner____last_update
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line____last_update
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line_category____last_update
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement____last_update
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement_type____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__write_uid
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__write_uid
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line_category__write_uid
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__write_uid
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement_type__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__write_date
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__write_date
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line_category__write_date
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__write_date
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement_type__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__employer_lastname
+msgid "Last name"
+msgstr "Cognome"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__lastname
+msgid "Last name / Company Name"
+msgstr "Cognome / Nome Azienda"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Allegato principale"
+
+#. module: l10n_it_cu
+#: selection:account.cu.se.partner,gender:0
+msgid "Male"
+msgstr "Maschio"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__message_has_error
+msgid "Message Delivery error"
+msgstr "Errore consegna messaggio"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__message_ids
+msgid "Messages"
+msgstr "Messaggi"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__certification_se_method_compute
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement_type__certification_se_method_compute
+msgid "Method to use for compute values"
+msgstr "Metodo da utilizzare per calcolare i valori"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__certification_se_method_export
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement_type__certification_se_method_export
+msgid "Method to use for export values"
+msgstr "Metodo da utilizzare per esportare i valori"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__certification_se_method_print
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement_type__certification_se_method_print
+msgid "Method to use for print values"
+msgstr "Metodo da utilizzare per stampare i valori"
+
+#. module: l10n_it_cu
+#: code:addons/l10n_it_cu/models/account_cu_se_partner_line.py:209
+#, python-format
+msgid "Missing Income type"
+msgstr "Tipo di reddito mancante"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line_category__name
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__name
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement_type__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Numero di azioni"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__message_has_error_counter
+msgid "Number of error"
+msgstr "Numero di errori"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,help:l10n_it_cu.field_account_cu_statement__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Numero di messaggi che richiedono un'azione"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,help:l10n_it_cu.field_account_cu_statement__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Numero di messaggi con errore di consegna"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,help:l10n_it_cu.field_account_cu_statement__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Numero di messaggi non letti"
+
+#. module: l10n_it_cu
+#: selection:account.cu.se.partner,gender:0
+msgid "Other"
+msgstr "Altro"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__partner_id
+msgid "Partner"
+msgstr "Partner"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__employer_phone
+msgid "Phone"
+msgstr "Telefono"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_statement_form
+msgid "Print"
+msgstr "Stampa"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__domicile_1_province
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__domicile_2_province
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__employer_province
+msgid "Province"
+msgstr "Provincia"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__certification_se_lines_ids
+msgid "SE Lines"
+msgstr "Linee SE"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner_line__se_partner_id
+msgid "SE Partner"
+msgstr "Partner SE"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__line_ids
+msgid "SE Partner lines"
+msgstr "Linee Partner SE"
+
+#. module: l10n_it_cu
+#: model:ir.actions.act_window,name:l10n_it_cu.action_account_cu_se_partner
+msgid "Se Partner"
+msgstr "Partner SE"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_se_partner_form
+msgid "Sections"
+msgstr "Sezioni"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__certification_se
+msgid "Self-Employment certification, commissions and different        incomes"
+msgstr "Certificazione di lavoro autonomo, provvigioni e redditi diversi"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_statement_form
+msgid "Self-Employment certification, commissions and different incomes"
+msgstr "Certificato di lavoro autonomo, commissioni e redditi diversi"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.cu_view_account_position_form
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.cu_view_partner_property_form
+msgid "Single Certification"
+msgstr "Certificazione unica"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_se_partner_line_form
+msgid "Social Security Datas"
+msgstr "Dati Sicurezza Sociale"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__special_categories
+msgid "Special Categories"
+msgstr "Categorie speciali"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__date_start
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement_type__date_start
+msgid "Start Date"
+msgstr "Data inizio"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_se_partner_search
+msgid "Statement"
+msgstr "Dichiarazione"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__statement_sign
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_statement_form
+msgid "Statement Sign"
+msgstr "Segno Dichiarazione"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_se_partner__statement_type_id
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__statement_type_id
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_se_partner_search
+msgid "Statement Type"
+msgstr "Tipo Dichiarazione"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__date_stop
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement_type__date_stop
+msgid "Stop Date"
+msgstr "Data Fine"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_statement_form
+msgid "Taxpayer"
+msgstr "Contribuente"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__taxpayer_appointment_code_id
+msgid "Taxpayer Appointment Code"
+msgstr "Codice di nomina del contribuente"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__taxpayer_firstname
+msgid "Taxpayer Firstname"
+msgstr "Nome Contribuente"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__taxpayer_fiscalcode
+msgid "Taxpayer Fiscalcode"
+msgstr "Codice Fiscale Contribuente"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__taxpayer_lastname
+msgid "Taxpayer Lastname"
+msgstr "Cognome Contribuente"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__taxpayer_sign
+msgid "Taxpayer Sign"
+msgstr "Firma Contribuente"
+
+#. module: l10n_it_cu
+#: code:addons/l10n_it_cu/models/account_cu_statement.py:224
+#, python-format
+msgid "The method '{}' is not valid to {}!                    You can set it in Statement Type"
+msgstr ""
+"Il metodo '{}' non è valido a {}!                    Puoi impostarlo in Tipo "
+"Dichiarazione"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_se_partner_tree
+msgid "Tot"
+msgstr "Totale"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_se_partner_line_tree
+msgid "Total"
+msgstr "Totale"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__message_unread
+msgid "Unread Messages"
+msgstr "Messaggi non letti"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contatore messaggi non letti"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__website_message_ids
+msgid "Website Messages"
+msgstr "Messaggi del sito web"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,help:l10n_it_cu.field_account_cu_statement__website_message_ids
+msgid "Website communication history"
+msgstr "Cronologia delle comunicazioni del sito web"
+
+#. module: l10n_it_cu
+#: model_terms:ir.ui.view,arch_db:l10n_it_cu.view_account_cu_se_partner_search
+msgid "With Errors"
+msgstr "Con Errori"
+
+#. module: l10n_it_cu
+#: model:ir.model,name:l10n_it_cu.model_withholding_tax_move
+msgid "Withholding Tax Move"
+msgstr "Movimento della ritenuta di acconto"
+
+#. module: l10n_it_cu
+#: model:ir.model.fields,field_description:l10n_it_cu.field_account_cu_statement__employer_zip
+msgid "Zip"
+msgstr "Zip"

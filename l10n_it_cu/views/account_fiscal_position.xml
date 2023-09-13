@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="cu_view_account_position_form" model="ir.ui.view">
+        <field name="name">cu.account.fiscal.position.form</field>
+        <field name="model">account.fiscal.position</field>
+        <field name="inherit_id" ref="account.view_account_position_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="inside">
+                <group string="Single Certification" name="single_certification">
+                    <field name='income_type_id'/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

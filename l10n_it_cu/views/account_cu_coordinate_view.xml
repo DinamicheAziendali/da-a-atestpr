@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="account_cu_coordinate_tree_view" model="ir.ui.view">
+        <field name="name">account.cu.coordinate.tree.view</field>
+        <field name="model">account.cu.coordinate</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="statement_type_id" />
+                <field name="name" />
+                <field name="sheet" />
+                <field name="coord_x" />
+                <field name="coord_y" />
+                <field name="model_id" />
+                <field
+                    name="field_id"
+                    required="True"
+                    domain="[('model_id', '=', model_id)]"
+                />
+                <field name="write_once_on" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="account_cu_coordinate_form_view" model="ir.ui.view">
+        <field name="name">account.cu.coordinate.form.view</field>
+        <field name="model">account.cu.coordinate</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="statement_type_id" />
+                        <field name="name" />
+                        <field name="sheet" />
+                        <field name="coord_x" />
+                        <field name="coord_y" />
+                        <field name="model_id" />
+                        <field name="field_id" domain="[('model_id', '=', model_id)]" />
+                        <field name="write_once_on" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="account_cu_coordinate_view_action" model="ir.actions.act_window">
+        <field name="name">CU Coordinate</field>
+        <field name="view_id" ref="l10n_it_cu.account_cu_coordinate_tree_view" />
+        <field name="res_model">account.cu.coordinate</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="account_cu_coordinate_menu"
+        action="l10n_it_cu.account_cu_coordinate_view_action"
+        parent="l10n_it_cu.menu_account_cu_main"
+        name="CU Coordinate"
+    />
+
+</odoo>

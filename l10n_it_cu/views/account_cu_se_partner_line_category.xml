@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="view_account_cu_se_partner_line_category_tree" model="ir.ui.view">
+        <field name="name">account.cu.se.partner.line.category.tree</field>
+        <field name="model">account.cu.se.partner.line.category</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_account_cu_se_partner_line_category_form" model="ir.ui.view">
+        <field name="name">account.cu.se.partner.line.category.form</field>
+        <field name="model">account.cu.se.partner.line.category</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_account_cu_se_partner_line_category" model="ir.actions.act_window">
+        <field name="name">Se Partner Line Category</field>
+        <field name="res_model">account.cu.se.partner.line.category</field>
+        <field name="view_id" ref="view_account_cu_se_partner_line_category_tree"/>
+    </record>
+
+    <menuitem id="menu_cu_se_partner_line_category" name="Se Partner Line Category"
+        action="action_account_cu_se_partner_line_category"
+        parent="menu_account_cu_main" sequence="20"/>
+
+</odoo>
