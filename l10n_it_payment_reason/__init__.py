@@ -34,6 +34,7 @@ def rename_old_italian_module(cr):
         [
             ("l10n_it_causali_pagamento", "l10n_it_payment_reason"),
         ],
+        merge_modules=True
     )
     openupgrade.rename_models(
         cr,
