@@ -34,6 +34,7 @@ def rename_old_italian_module(cr):
         [
             ("l10n_it_codici_carica", "l10n_it_appointment_code"),
         ],
+        merge_modules=True
     )
     openupgrade.rename_models(
         cr,
